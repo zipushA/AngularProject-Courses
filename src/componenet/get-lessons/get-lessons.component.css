@@ -1,0 +1,26 @@
+.mat-card {
+    display: flex;
+    flex-direction: row; /* כדי לשמור על הכותרת והתוכן אחד מתחת לשני */
+  }
+  
+  .icon-buttons {
+      display: flex; /* שימוש ב-flexbox כדי לסדר את האייקונים בשורה */
+      align-items:center;
+      justify-content: center;
+      margin-bottom: 10px; /* מרכז את האייקונים horizontally */
+    }
+    
+    .icon {
+      cursor: pointer; /* שינוי הסמן לכפתור */
+      margin-right: 40px;
+       /* רווח בין האייקונים */
+    }
+    
+    .icon:last-child {
+      margin-right: 0; /* לא להוסיף רווח אחרי האייקון האחרון */
+    }
+    
+    .icon mat-icon {
+      font-size: 24px; /* שינוי גודל האייקון לפי הצורך */
+    }
+    
