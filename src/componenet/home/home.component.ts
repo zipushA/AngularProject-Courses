@@ -10,6 +10,8 @@ import { Router, RouterLink, RouterOutlet } from '@angular/router';
 })
 export class HomeComponent { 
   role:string|any=localStorage.getItem('role')
-
-
+  ngOnInit(){
+    console.log(this.role);
+    
+  }
 }

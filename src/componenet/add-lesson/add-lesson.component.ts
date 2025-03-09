@@ -55,7 +55,7 @@ isEditMode = false;
         this.lessonData.id // ה-ID של השיעור שאתה מעדכן
       ).subscribe({
         next: (data) => {
-          console.log("השיעור עודכן בהצלחה");
+         alert("השיעור עודכן בהצלחה");
           console.log(data);
         },
         error: (err) => console.log("שגיאה בעדכון השיעור", err)
@@ -65,7 +65,7 @@ isEditMode = false;
         if (this.postLessonForm&&this.postLessonForm.valid) {
           console.log(this.postLessonForm.value);
           this.courseService.postLesson(this.postLessonForm.value.lesson.title,this.postLessonForm.value.lesson.content ,this.courseData.id,this.token).subscribe({
-            next: (data) => console.log("הקורס נוסף בהצלחה"), error: (err) => console.log("no")
+            next: (data) => alert("הקורס נוסף בהצלחה"), error: (err) => console.log("no")
           });
         };
       }

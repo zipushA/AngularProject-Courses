@@ -40,7 +40,7 @@ export class LoginComponent {
       console.log(this.registerForm.value);
    this.authService.Login(this.registerForm.value.user.email,this.registerForm.value.user.password).subscribe({
         next: (data) => {
-          console.log("נכנסת בהצלחה")
+          alert("נכנסת בהצלחה")
         localStorage.setItem('role',data.role)   
 
         }, error: (err) => console.log("no")

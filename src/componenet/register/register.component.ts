@@ -45,7 +45,7 @@ export class RegisterComponent {
     if (this.registerForm.valid) {
       console.log(this.registerForm.value);
       this.authService.signUp(this.registerForm.value.user.name,this.registerForm.value.user.email,this.registerForm.value.user.password,this.registerForm.value.user.role).subscribe({
-        next: (data) => console.log("התחברת בהצלחה"), error: (err) => console.log("no")
+        next: (data) => alert("התחברת בהצלחה"), error: (err) => console.log("no")
       });
     };
   }
